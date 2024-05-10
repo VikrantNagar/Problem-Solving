@@ -15,8 +15,9 @@ public class LongestCommonPrefix {
 	        }
 	    }
 
-	    for(String str : strs){
+	    
 	    for(int i=0 ; i<shortest.length() ; i++){
+	    	for(String str : strs){
 	            if(str.charAt(i)!=shortest.charAt(i)){
 	                return shortest.substring(0,i);
 	            }
